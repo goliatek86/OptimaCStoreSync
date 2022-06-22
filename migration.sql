@@ -1,0 +1,2 @@
+ALTER TABLE `klienci` ADD `optima_id` INT NULL;
+CREATE TABLE `optima_invoices` ( `id` INT NOT NULL AUTO_INCREMENT , `optima_invoice_id` INT NOT NULL , `optima_client_id` INT NOT NULL , `number` VARCHAR(255) NOT NULL , `nip` VARCHAR(64) NOT NULL , `date` VARCHAR(255) NOT NULL , `payment_term` VARCHAR(255) NOT NULL , `sum` DOUBLE(8,2) NOT NULL , `currency` INT NOT NULL , `payed` BOOLEAN NOT NULL , PRIMARY KEY (`id`), UNIQUE (`optima_invoice_id`));
